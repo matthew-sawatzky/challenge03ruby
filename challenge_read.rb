@@ -25,10 +25,6 @@ puts "Columns in the products table: #{columns}"
 
 
 
-    class Product < ActiveRecord::Base
-        belongs_to :category
-    end
-
     product = Product.find_by(name: "Product 2")
 
     category_name = product.category.name
