@@ -20,7 +20,7 @@ puts "Columns in the products table: #{columns}"
     puts "Products above $10 with names starting with 'C':"
     products_above_c.each { |product| puts product.name }
 
-    low_stock_products = Product.where('stock_quantity > 5').count
+    low_stock_products = Product.where('stock_quantity < 5').count
     puts "The number of low stock products is: #{low_stock_products}."
 
 
