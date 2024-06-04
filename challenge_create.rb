@@ -9,11 +9,6 @@ require_relative 'ar.rb'
 
 
 product2 = Product.create(id: 495, name: 'Product 2', description: 'Test2', price: 10.00, stock_quantity: 1, category_id: 1, created_at: Time.now, updated_at: Time.now)
-if product2.save
-    puts "Product 2 saved successfully!"
-else
-    puts product2.errors.full_messages
-end
 
 product3 = Product.new do |p|
   p.id = 496
