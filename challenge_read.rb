@@ -25,7 +25,9 @@ puts "Columns in the products table: #{columns}"
 
 
 
-    product = Product.find_by(name: "Product 2")
+
+
+    product = Product.find_by(name: "Chai")
 
     category_name = product.category.name
     puts "#{category_name}"
